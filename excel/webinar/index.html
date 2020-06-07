@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Webinar Sign Up</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/Skill Oxide.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="contact1">
+	    
+		<div class="container-contact1">
+		    <div class='text-center'>
+	        <img src='images/logo.png' width='50%' height='auto' style="margin-top:-70px;">
+	    </div>
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="images/img2.jpg" alt="webinar-icon">
+			</div>
+
+			<form class="contact1-form validate-form" action="javascript:void();" method="POST" id="webmsg">
+				<span class="contact1-form-title">
+					Sign Up for Webinar
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate = "Name is required">
+					<input class="input1" type="text" placeholder="Name" id="name" name="name">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input class="input1" type="email" placeholder="Email" id="email" name="email">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Contact Number is required">
+					<input class="input1" type="tel" placeholder="Contact Number" id="mobile" name="mobile">
+					<span class="shadow-input1"></span>
+				</div>
+				<!--this is by ujjwal-->
+				<div class="wrap-input1 validate-input" data-validate = "please select an option " style="margin-left:20px; font-family:Montserrat-Bold;">
+					<span class="contact-form-label">I am a:</span><br>
+					<input class="" type="radio" name="student" value="student" checked="checked" id="student" onclick="showHideWorkInfo()"> Student<br>
+					<input class="" type="radio" name="professionals" value="professionals" id="professionals"> Working Professionals<br>
+				</div>
+				<!--this is end-->
+				
+				
+				<div class="wrap-input1 validate-input" data-validate = "College Name is required">
+					<input class="input1" type="text" placeholder="College Name" id="college" name="college">
+					<span class="shadow-input1"></span>
+				</div>
+				
+				<div class="wrap-input1 validate-input" data-validate = "Course is required">
+					<input class="input1" type="text" placeholder="Course" id="course" name="course">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<!--again ujjwal-->
+				<div class="wrap-input1 validate-input" data-validate = "Profession is required">
+					<input class="input1" type="text" placeholder="Profession" id="profession" name="college">
+					<span class="shadow-input1"></span>
+				</div>
+				
+				<div class="wrap-input1 validate-input" data-validate = "Company name  is required">
+					<input class="input1" type="text" placeholder="Company name " id="company" name="course">
+					<span class="shadow-input1"></span>
+				</div>
+				<div class="wrap-input1 validate-input" data-validate = "Years of experience  is required">
+					<input class="input1" type="text" placeholder="Years of experience " id="experience" name="course">
+					<span class="shadow-input1"></span>
+				</div>
+				<!--this is end-->
+				
+				<div class="wrap-input1 validate-input" data-validate = "Year is required" style="margin-left:20px; font-family:Montserrat-Bold;">
+					<span class="contact-form-label">Year:</span><br>
+					<input class="" type="radio" name="year" value="1" checked="checked"> 1<br>
+					<input class="" type="radio" name="year" value="2"> 2<br>
+					<input class="" type="radio" name="year" value="3"> 3<br>
+					<input class="" type="radio" name="year" value="4"> 4<br>
+					<span class="shadow-input1"></span>
+				</div>
+
+				
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn" onclick="send();">
+						<span>
+							Submit
+							<!---<i class="fa fa-long-arrow-right" aria-hidden="true"></i>-->
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script src="js/webinar1.js"></script>
+	<script src="js/new.js"></script>
+
+</body>
+</html>
