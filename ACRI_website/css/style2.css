@@ -1,0 +1,11 @@
+#head{
+    margin-top: 150px;
+    font-size: 45px;
+    text-align: left;
+    color: darkblue;
+}
+@media(max-width:600px){
+    #head{
+        font-size: 30px;
+    }
+}
